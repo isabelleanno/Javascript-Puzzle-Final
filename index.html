@@ -20,15 +20,15 @@
       <div class="col-6 d-flex justify-content-center">
         <canvas id="canvas"></canvas>
       </div>
-      <div class="controls col-6">
-        <div class="controls col-11 my-3">
+      <div class="controls py-2 col-6">
+        <div class="controls col-11 my-1">
           <h4 class="text-primary">
             Select or search a theme, then click the "start" button to begin.
           </h4>
         </div>
 
-        <div class="col-11 mb-3 controls">
-          <h3 class="text-center mb-3">Puzzle Themes</h3>
+        <div class="col-11 mb-1 controls">
+          <h3 class="text-center mb-1">Puzzle Themes</h3>
           <div class="d-block-flex" id="selectTheme">
             <button class="theme btn btn-secondary m-1" value="animals">
               Animals
@@ -75,7 +75,7 @@
             </button>
           </div>
         </div>
-        <div class="col-11 mb-3 controls">
+        <div class="col-11 mb-1 controls">
           <div class="d-inline">
             <h3>Search a theme</h3>
             <input type="text" id="search" />
@@ -86,24 +86,38 @@
             />
           </div>
         </div>
-        <div class="controls col-11 mb-3">
-          <h3 class="mb-3">Puzzle Settings</h3>
-          <div class="col-12 text-center mb-3">
+        <div class="controls col-11 mb-1">
+          <h3 class="mb-1">Puzzle Settings</h3>
+          <div class="col-12 text-center mb-1">
             <label for="difficulty">Difficulty</label>
             <input type="range" min="2" max="16" value="4" id="difficulty" />
           </div>
-          <button class="button btn btn-success mb-3" onclick="shufflePuzzle()">
+          <button class="button btn btn-success mb-1" onclick="shufflePuzzle()">
             START or shuffle puzzle
           </button>
           <button
-            class="button btn btn-warning mb-3"
+            class="button btn btn-warning mb-1"
             onclick=" document. location. reload()"
           >
             Find new puzzle
           </button>
-          <button class="button btn btn-danger mb-3" onclick="onImage()">
+          <button class="button btn btn-danger mb-1" onclick="onImage()">
             Reset current puzzle
           </button>
+        </div>
+        <div class="controls col-11 mb-1">
+          <p class="m-0">Made with ❤️ by Isabelle Anno.</p>
+          <p class="mt-1">
+            forked from
+            <a
+              href="https://code.tutsplus.com/tutorials/create-an-html5-canvas-tile-swapping-puzzle--active-10747"
+              >tutsplus.com</a
+            >. Favicon sourced from
+            <a
+              href="https://www.flaticon.com/free-icon/puzzle_10421838?term=puzzle&page=1&position=28&origin=tag&related_id=10421838"
+              >flaticon.com</a
+            >
+          </p>
         </div>
       </div>
     </div>
